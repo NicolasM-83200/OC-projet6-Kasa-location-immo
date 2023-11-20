@@ -1,0 +1,15 @@
+header {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 1240px;
+    height: 68px;
+  }
+}

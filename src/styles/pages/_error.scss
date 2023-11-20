@@ -1,0 +1,19 @@
+.error-container {
+  height: calc(100vh - $header-height - $footer-height);
+
+  .error-content {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: $color-1;
+
+    h1 {
+      font-size: 15em;
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+}
