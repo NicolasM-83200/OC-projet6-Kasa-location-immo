@@ -1,0 +1,14 @@
+.gallery {
+  max-width: 1240px;
+  margin: 50px auto;
+  padding: 45px;
+  background-color: $background-gallery;
+  border-radius: 25px;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 60px;
+  }
+}
