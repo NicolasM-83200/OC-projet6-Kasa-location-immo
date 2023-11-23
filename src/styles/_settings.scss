@@ -1,8 +1,8 @@
 // Déclaration variables globales
 $font-1: "Montserrat", sans-serif;
 
-$color-1: #ff6060;
-$color-2: black;
+$main-color: #ff6060;
+$background-gallery: rgba(201, 201, 201, 0.3);
 
 $header-height: 163px;
 $footer-height: 210px;
@@ -30,5 +30,5 @@ li {
 }
 
 a {
-  color: $color-1;
+  color: $main-color;
 }

@@ -7,7 +7,7 @@
       padding: 10px 30px;
 
       li {
-        color: $color-1;
+        color: $main-color;
         font-size: 1.5em;
         transition: 0.2s;
       }
@@ -19,7 +19,7 @@
         content: "";
         height: 2px;
         width: 0;
-        background: $color-1;
+        background: $main-color;
         position: absolute;
         border-radius: 10px;
         bottom: 10px;
