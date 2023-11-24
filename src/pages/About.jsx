@@ -27,16 +27,19 @@ const About = () => {
 
   return (
     <div className="wrapper">
-      <Header />
-      <Banner bannerImg={background_2} />
-      {aboutDatas.map((aboutData, index) => (
-        <Collapse
-          key={index}
-          className="about"
-          title={aboutData.title}
-          text={aboutData.text}
-        />
-      ))}
+      <div className="main">
+        <Header />
+        <Banner bannerImg={background_2} />
+        <div className="collapse-item-container about">
+          {aboutDatas.map((aboutData, index) => (
+            <Collapse
+              key={index}
+              title={aboutData.title}
+              text={aboutData.text}
+            />
+          ))}
+        </div>
+      </div>
       <Footer />
     </div>
   );

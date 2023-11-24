@@ -8,9 +8,14 @@ import Banner from "../components/Banner";
 const Home = () => {
   return (
     <div className="wrapper">
-      <Header />
-      <Banner bannerImg={background_1} title="Chez vous, partout et ailleurs" />
-      <Gallery />
+      <div className="main">
+        <Header />
+        <Banner
+          bannerImg={background_1}
+          title="Chez vous, partout et ailleurs"
+        />
+        <Gallery />
+      </div>
       <Footer />
     </div>
   );
