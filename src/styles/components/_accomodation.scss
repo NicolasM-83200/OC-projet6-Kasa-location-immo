@@ -1,0 +1,73 @@
+.accomodation-infos {
+  max-width: 1240px;
+  margin: 30px auto;
+
+  .accomodation-infos-up {
+    display: flex;
+    justify-content: space-between;
+
+    .info-left {
+      p {
+        margin: 10px 0 20px;
+      }
+
+      .tags-container {
+        display: flex;
+
+        .tag {
+          height: 25px;
+          min-width: 115px;
+          padding: 5px 15px;
+          margin-right: 15px;
+          background: $main-color;
+          color: whitesmoke;
+          font-weight: 400;
+          font-size: 0.8em;
+          text-align: center;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .info-right {
+      width: 160px;
+
+      .user-infos {
+        display: flex;
+        justify-content: flex-end;
+
+        .user-name {
+          text-align: right;
+          align-self: center;
+          margin-right: 10px;
+        }
+        .user-avatar {
+          width: 64px;
+          height: 64px;
+          img {
+            object-fit: cover;
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+            filter: $shadow;
+          }
+        }
+      }
+
+      .user-ratings {
+        margin-top: 10px;
+        .fa-star {
+          margin-left: 10px;
+        }
+        .greyStars {
+          color: $light-grey;
+        }
+      }
+    }
+  }
+
+  .collapse-item-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
