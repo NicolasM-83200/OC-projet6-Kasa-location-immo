@@ -2,9 +2,13 @@
 $font-1: "Montserrat", sans-serif;
 
 $main-color: #ff6060;
-$background-gallery: rgba(201, 201, 201, 0.3);
+$light-grey: rgba(201, 201, 201, 0.3);
+$shadow: drop-shadow(0 0 5px #555);
 
-$header-height: 163px;
+$header-height-desktop: 163px;
+$header-height-mobile: 100px;
+$banner-height-desktop: 223px;
+$banner-height-mobile: 111px;
 $footer-height: 210px;
 
 * {
@@ -15,14 +19,20 @@ $footer-height: 210px;
 
 body {
   font-family: $font-1;
+  color: $main-color;
   font-weight: 500;
-  position: relative;
+  margin: 0 auto;
 }
 
 .wrapper {
+  position: relative;
   min-height: 100vh;
-  margin: 0 auto;
-  max-width: 1440px;
+}
+
+.main {
+  margin: 0 20px;
+  min-height: 100%;
+  padding-bottom: $footer-height;
 }
 
 li {
