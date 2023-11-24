@@ -1,5 +1,5 @@
 .error-container {
-  height: calc(100vh - $header-height - $footer-height);
+  height: calc(100vh - $header-height-desktop - $footer-height);
 
   .error-content {
     text-align: center;
