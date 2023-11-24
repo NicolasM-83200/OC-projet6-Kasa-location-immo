@@ -1,51 +1,63 @@
-.collapse-item {
+.collapse-item-container {
   &.about {
     width: 70%;
+    margin: 0 auto;
   }
   &.accomodation {
-    width: 50%;
-  }
-  margin: 30px auto;
-
-  .collapse-item-title {
-    background: $main-color;
-    height: 52px;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    span {
-      color: white;
-      font-size: 1.5em;
-    }
-
-    .arrow {
-      cursor: pointer;
-      transition: transform 0.3s ease-in-out;
-      &.open {
-        transform: rotate(-180deg);
+    .collapse-item {
+      margin: 30px auto;
+      &:first-child {
+        margin-left: 0;
+        width: 95%;
+      }
+      &:last-child {
+        margin-right: 0;
+        width: 95%;
       }
     }
   }
+  .collapse-item {
+    margin: 30px auto;
+    .collapse-item-title {
+      background: $main-color;
+      height: 52px;
+      padding: 15px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-  .collapse-item-text-container {
-    background: $background-gallery;
-    border-radius: 0 0 5px 5px;
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
-    &.open {
-      height: auto;
-    }
-    &.closed {
-      height: 0;
+      span {
+        color: white;
+        font-size: 1.5em;
+      }
+
+      .arrow {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        &.open {
+          transform: rotate(-180deg);
+        }
+      }
     }
 
-    .collapse-item-text {
-      padding: 20px;
-      color: $main-color;
-      font-size: 1.1em;
+    .collapse-item-text-container {
+      background: $light-grey;
+      border-radius: 0 0 5px 5px;
+      overflow: hidden;
+      transition: height 0.3s ease-in-out;
+      &.open {
+        height: auto;
+      }
+      &.closed {
+        height: 0;
+      }
+
+      .collapse-item-text {
+        padding: 20px;
+        color: $main-color;
+        font-size: 1.1em;
+      }
     }
   }
 }

@@ -1,9 +1,7 @@
 .carousel-container {
-  width: 1240px;
+  max-width: 1240px;
   height: 415px;
   margin: 0 auto;
-  // border-radius: 25px;
-  // background: $main-color;
 
   .carousel {
     display: flex;
@@ -19,6 +17,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 25px;
+      box-shadow: 0 0 5px #555;
       opacity: 1;
       transition: 0.5s ease-in-out;
 
@@ -31,7 +30,7 @@
       position: absolute;
       z-index: 2;
       cursor: pointer;
-      filter: drop-shadow(0 0 5px #555);
+      filter: $shadow;
       transition: transform 0.3s ease-in-out;
 
       &.left {
@@ -56,7 +55,7 @@
       z-index: 2;
       color: white;
       font-size: 1.2em;
-      filter: drop-shadow(0 0 10px #555);
+      filter: $shadow;
 
       &.hidden {
         display: none;

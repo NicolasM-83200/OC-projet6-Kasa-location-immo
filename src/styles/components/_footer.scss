@@ -1,6 +1,8 @@
 footer {
   background-color: black;
-  max-width: 1440px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   height: $footer-height;
   display: flex;
   align-items: center;

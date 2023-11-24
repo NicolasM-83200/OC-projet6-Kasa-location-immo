@@ -1,9 +1,8 @@
 header {
-  height: $header-height;
+  height: 163px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -11,5 +10,8 @@ header {
     width: 100vw;
     max-width: 1240px;
     height: 68px;
+    .logo-mobile {
+      display: none;
+    }
   }
 }
