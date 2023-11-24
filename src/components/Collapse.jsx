@@ -15,7 +15,7 @@ const Collapse = (props) => {
   }, [isOpen]);
 
   return (
-    <div className={`collapse-item ${props.className}`}>
+    <div className="collapse-item">
       <div className="collapse-item-title">
         <span>{props.title}</span>
         <img
