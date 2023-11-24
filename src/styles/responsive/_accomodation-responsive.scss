@@ -1,0 +1,109 @@
+@media only screen and (max-width: 767px) {
+  .carousel-container {
+    height: 255px;
+    width: 335px;
+    .carousel {
+      .arrow {
+        &.left {
+          left: 10px;
+          width: 15px;
+        }
+        &.right {
+          right: 10px;
+          width: 15px;
+        }
+      }
+      .indicator {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .accomodation-infos {
+    margin: 15px auto;
+
+    .accomodation-infos-up {
+      display: flex;
+      flex-direction: column;
+
+      .info-left {
+        h2 {
+          font-size: 1em;
+          font-weight: 500;
+        }
+        p {
+          font-size: 0.8em;
+        }
+        .tags-container {
+          .tag {
+            padding: 0 5px;
+            height: 18px;
+            min-width: 84px;
+            font-size: 0.6em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+          }
+        }
+      }
+
+      .info-right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+
+        .user-infos {
+          display: flex;
+          justify-content: flex-end;
+          .user-name {
+            font-size: 0.8em;
+          }
+          .user-avatar {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .user-ratings {
+          margin: 0;
+          .fa-star {
+            font-size: 0.8em;
+            margin-left: 0;
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+
+    .collapse-item-container {
+      &.accomodation {
+        display: flex;
+        flex-direction: column;
+        .collapse-item {
+          margin: 10px auto;
+          width: 100%;
+          .collapse-item-title {
+            padding: 10px;
+            height: 30px;
+            span {
+              font-size: 1em;
+            }
+            .arrow {
+              width: 25px;
+            }
+          }
+          .collapse-item-text-container {
+            .collapse-item-text {
+              padding: 15px;
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

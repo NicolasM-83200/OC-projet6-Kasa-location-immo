@@ -1,0 +1,28 @@
+@media only screen and (max-width: 767px) {
+  .collapse-item-container {
+    &.about {
+      width: 100%;
+
+      .collapse-item {
+        .collapse-item-title {
+          height: 30px;
+          padding: 10px;
+
+          span {
+            font-size: 1em;
+          }
+          .arrow {
+            width: 5%;
+          }
+        }
+
+        .collapse-item-text-container {
+          .collapse-item-text {
+            padding: 10px;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
