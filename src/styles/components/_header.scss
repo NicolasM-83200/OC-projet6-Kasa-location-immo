@@ -10,7 +10,7 @@ header {
     width: 100vw;
     max-width: 1240px;
     height: 68px;
-    .logo-mobile {
+    &__logo--mobile {
       display: none;
     }
   }

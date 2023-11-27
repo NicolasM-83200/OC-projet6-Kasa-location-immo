@@ -1,17 +1,16 @@
 @media only screen and (max-width: 767px) {
   .error-container {
-    .error-content {
+    &__content {
       justify-content: space-around;
-
-      h1 {
-        font-size: 5em;
-      }
-      p {
-        font-size: 1em;
-      }
-      a {
-        font-size: 0.8em;
-      }
+    }
+    &__title {
+      font-size: 5em;
+    }
+    &__text {
+      font-size: 1em;
+    }
+    &__link {
+      font-size: 0.8em;
     }
   }
 }

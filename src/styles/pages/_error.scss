@@ -1,19 +1,18 @@
 .error-container {
   height: calc(100vh - $header-height-desktop - $footer-height);
 
-  .error-content {
+  &__content {
     text-align: center;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: $main-color;
-
-    h1 {
-      font-size: 15em;
-    }
-    p {
-      font-size: 2em;
-    }
+  }
+  &__title {
+    font-size: 15em;
+  }
+  &__text {
+    font-size: 2em;
   }
 }

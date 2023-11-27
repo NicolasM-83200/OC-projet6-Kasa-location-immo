@@ -10,25 +10,26 @@ const AccomodationInfos = ({ infos }) => {
   return (
     <div className="accomodation-infos">
       <div className="accomodation-infos-up">
-        <div className="info-left">
-          <h2>{infos.title}</h2>
-          <p>{infos.location}</p>
-          <div className="tags-container">
+        <div className="accomodation-infos-up__info-left">
+          <h2 className="accomodation-infos-up__title">{infos.title}</h2>
+          <p className="accomodation-infos-up__location">{infos.location}</p>
+          <div className="accomodation-infos-up__tags-container">
             {infos.tags.map((tag, index) => (
-              <div className="tag" key={index}>
+              <div className="accomodation-infos-up__tag" key={index}>
                 {tag}
               </div>
             ))}
           </div>
         </div>
-        <div className="info-right">
-          <div className="user-infos">
-            <div className="user-name">
+        <div className="accomodation-infos-up__info-right">
+          <div className="accomodation-infos-up__user-infos">
+            <div className="accomodation-infos-up__user-name">
               <p>{surnameUser}</p>
               <p>{lastnameUser}</p>
             </div>
-            <div className="user-avatar">
+            <div className="accomodation-infos-up__user-avatar">
               <img
+                className="accomodation-infos-up__avatar"
                 src={infos.host.picture}
                 alt={`Avatar de ${infos.host.name}`}
               />

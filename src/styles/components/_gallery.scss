@@ -4,7 +4,7 @@
   padding: 45px;
   background-color: $light-grey;
   border-radius: 25px;
-  ul {
+  &__list {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

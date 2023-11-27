@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: black;
   width: 100%;
   position: absolute;
@@ -8,14 +8,14 @@ footer {
   align-items: center;
   justify-content: center;
 
-  .footer-content {
+  &__content {
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 
-    p {
+    &-text {
       color: whitesmoke;
       font-size: 1.5em;
     }

@@ -5,9 +5,13 @@ import Card from "./Card";
 const Gallery = () => {
   return (
     <div className="gallery">
-      <ul>
+      <ul className="gallery__list">
         {data.map((accomodation) => (
-          <Link to={`/accomodation/${accomodation.id}`} key={accomodation.id}>
+          <Link
+            className="gallery__list-item-link"
+            to={`/accomodation/${accomodation.id}`}
+            key={accomodation.id}
+          >
             <Card accomodation={accomodation} />
           </Link>
         ))}

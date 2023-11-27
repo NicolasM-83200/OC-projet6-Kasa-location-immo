@@ -16,27 +16,37 @@ const Carousel = ({ slides }) => {
     <div className="carousel-container">
       <div className="carousel">
         <img
-          className={`arrow left ${slides.length - 1 === 0 ? "hidden" : ""}`}
+          className={`carousel__arrow-left${
+            slides.length - 1 === 0 ? "--hidden" : ""
+          }`}
           src={arrowLeft}
           alt="bouton précédent"
           onClick={prevSlide}
         />
         {slides.map((slide, index) => (
           <img
-            className={currentIndex === index ? "slide" : "slide hidden"}
+            className={
+              currentIndex === index
+                ? "carousel__slide"
+                : "carousel__slide hidden"
+            }
             src={slide}
             alt={`Slide carousel ${index + 1}`}
             key={index}
           />
         ))}
         <img
-          className={`arrow right ${slides.length - 1 === 0 ? "hidden" : ""}`}
+          className={`carousel__arrow-right${
+            slides.length - 1 === 0 ? "--hidden" : ""
+          }`}
           src={arrowRight}
           alt="bouton suivant"
           onClick={nextSlide}
         />
         <span
-          className={`indicator ${slides.length - 1 === 0 ? "hidden" : ""}`}
+          className={`carousel__indicator${
+            slides.length - 1 === 0 ? "--hidden" : ""
+          }`}
         >
           {currentIndex + 1}/{slides.length}
         </span>

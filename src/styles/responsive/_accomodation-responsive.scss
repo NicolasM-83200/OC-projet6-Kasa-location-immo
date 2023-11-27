@@ -1,19 +1,18 @@
 @media only screen and (max-width: 767px) {
   .carousel-container {
     height: 255px;
-    width: 335px;
     .carousel {
-      .arrow {
-        &.left {
+      &__arrow {
+        &-left {
           left: 10px;
           width: 15px;
         }
-        &.right {
+        &-right {
           right: 10px;
           width: 15px;
         }
       }
-      .indicator {
+      &__indicator {
         font-size: 0.9em;
       }
     }
@@ -25,56 +24,55 @@
     .accomodation-infos-up {
       display: flex;
       flex-direction: column;
-
-      .info-left {
-        h2 {
-          font-size: 1em;
-          font-weight: 500;
-        }
-        p {
-          font-size: 0.8em;
-        }
-        .tags-container {
-          .tag {
-            padding: 0 5px;
-            height: 18px;
-            min-width: 84px;
-            font-size: 0.6em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 7px;
-          }
-        }
+      &__title {
+        font-size: 1em;
+        font-weight: 500;
+      }
+      &__location {
+        font-size: 0.8em;
+      }
+      &__tags-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+      }
+      &__tag {
+        padding: 0 5px;
+        height: 18px;
+        min-width: 84px;
+        font-size: 0.6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
       }
 
-      .info-right {
+      &__info-right {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
         margin-top: 20px;
         width: 100%;
+      }
+      &__user-infos {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &__user-name {
+        font-size: 0.8em;
+      }
+      &__user-avatar {
+        width: 32px;
+        height: 32px;
+      }
 
-        .user-infos {
-          display: flex;
-          justify-content: flex-end;
-          .user-name {
-            font-size: 0.8em;
-          }
-          .user-avatar {
-            width: 32px;
-            height: 32px;
-          }
-        }
-
-        .user-ratings {
-          margin: 0;
-          .fa-star {
-            font-size: 0.8em;
-            margin-left: 0;
-            margin-right: 7px;
-          }
+      .user-ratings {
+        margin: 0;
+        .fa-star {
+          font-size: 0.8em;
+          margin-left: 0;
+          margin-right: 7px;
         }
       }
     }
