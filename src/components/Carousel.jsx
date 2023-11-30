@@ -1,10 +1,14 @@
+// import React from "react";
 import React, { useState } from "react";
 import arrowLeft from "../assets/img/Arrow-left.png";
 import arrowRight from "../assets/img/Arrow-right.png";
 
+// On crée un composant Carousel qui prend en paramètre un objet props
 const Carousel = ({ slides }) => {
+  // On utilise le hook useState pour créer une variable d'état qui va nous permettre de savoir quelle slide est affichée
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // On crée deux fonctions qui vont nous permettre de changer la slide affichée
   const prevSlide = () => {
     setCurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
   };
@@ -15,6 +19,7 @@ const Carousel = ({ slides }) => {
   return (
     <div className="carousel-container">
       <div className="carousel">
+        {/* // On affiche les flèches de navigation et le numéro de la slide */}
         <img
           className={`carousel__arrow-left${
             slides.length - 1 === 0 ? "--hidden" : ""
@@ -23,6 +28,7 @@ const Carousel = ({ slides }) => {
           alt="bouton précédent"
           onClick={prevSlide}
         />
+        {/* // On parcours le tableau slides de l'objet props pour afficher les images */}
         {slides.map((slide, index) => (
           <img
             className={

@@ -1,3 +1,4 @@
+// Import Header, Footer, Banner, Collapse components
 import React from "react";
 import background_2 from "../assets/img/background-2.webp";
 import Header from "../components/Header";
@@ -5,7 +6,9 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 
+// Création de la page About
 const About = () => {
+  // Création d'un tableau d'objets
   const aboutDatas = [
     {
       title: "Fiabilité",
@@ -25,6 +28,7 @@ const About = () => {
     },
   ];
 
+  // Renvoie le code HTML
   return (
     <div className="wrapper">
       <div className="main">

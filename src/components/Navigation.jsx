@@ -1,10 +1,13 @@
+// Import navigation component
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+// Création du composant Navigation
 const Navigation = () => {
   return (
     <div className="navigation">
       <ul className="navigation__list">
+        {/* // On utilise le composant NavLink de react-router-dom pour créer un lien vers la page d'accueil et la page à propos */}
         <NavLink
           to="/"
           className={(nav) =>

@@ -1,6 +1,7 @@
 import React from "react";
 import logoBW from "../assets/img/logo-B&W.png";
 
+// Création du composant Footer
 const Footer = () => {
   return (
     <footer className="footer">

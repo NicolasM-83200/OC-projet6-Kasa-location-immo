@@ -1,9 +1,11 @@
+// Import Header and Footer components
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const Error = () => {
+  // Renvoie le code HTML
   return (
     <div className="wrapper">
       <div className="main">

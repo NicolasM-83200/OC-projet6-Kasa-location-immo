@@ -1,3 +1,4 @@
+// Importation des composants React
 import React from "react";
 import data from "../assets/logements.json";
 import Header from "../components/Header";
@@ -18,10 +19,12 @@ const Accomodation = () => {
     return <Navigate to="/error" />;
   }
 
+  // Renvoie le code HTML
   return (
     <div className="wrapper">
       <div className="main">
         <Header />
+        {/* On passe les données de l'élément trouvé à nos composants */}
         <Carousel slides={accomodationData.pictures} />
         <AccomodationInfos infos={accomodationData} />
       </div>
