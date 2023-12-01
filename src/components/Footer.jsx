@@ -6,7 +6,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__content">
-        <img className="footer__content-img" src={logoBW} alt="logo de Kasa" />
+        <img
+          className="footer__content-img"
+          src={logoBW}
+          alt="logo de Kasa"
+          height={"41px"}
+          width={"123px"}
+        />
         <p className="footer__content-text">© 2020 Kasa. All rights reserved</p>
       </div>
     </footer>

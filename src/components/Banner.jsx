@@ -4,7 +4,13 @@ import React from "react";
 const Banner = (props) => {
   return (
     <div className="banner">
-      <img className="banner__img" src={props.bannerImg} alt="Bannière" />
+      <img
+        className="banner__img"
+        src={props.bannerImg}
+        alt="Bannière"
+        height={"223px"}
+        width={"1240px"}
+      />
       {props.title && (
         <div className="banner__title">
           <h1 className="banner__title--desktop">{props.title}</h1>

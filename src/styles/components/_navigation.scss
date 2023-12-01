@@ -13,6 +13,7 @@
           background: $main-color;
           position: absolute;
           border-radius: 10px;
+          bottom: 0;
           left: 50%;
           transform: translateX(-50%);
           -webkit-animation: anim 0.3s ease forwards;
