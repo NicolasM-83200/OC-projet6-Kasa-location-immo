@@ -1,7 +1,7 @@
 
-<img width="661" alt="Capture d'écran 2023-12-05 093723" src="https://github.com/NicolasM-83200/OC-projet6-Kasa-location-immo/assets/130040163/dc0c17d4-e35c-4537-9720-b484e14e7bb3">
+<img width="600" alt="Capture d'écran 2023-12-05 093723" src="https://github.com/NicolasM-83200/OC-projet6-Kasa-location-immo/assets/130040163/dc0c17d4-e35c-4537-9720-b484e14e7bb3">
 
-<img width="189" alt="Capture d'écran 2023-12-05 093759" src="https://github.com/NicolasM-83200/OC-projet6-Kasa-location-immo/assets/130040163/c9d12ffc-518f-4cf6-9d74-e2c02331acda">
+<img width="175" alt="Capture d'écran 2023-12-05 093759" src="https://github.com/NicolasM-83200/OC-projet6-Kasa-location-immo/assets/130040163/c9d12ffc-518f-4cf6-9d74-e2c02331acda">
 
 # Créez une application web de location immobilière avec React
 
